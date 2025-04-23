@@ -386,11 +386,6 @@ export default function App() {
                   <div className="p-6">
                     <h3 className="text-2xl font-semibold text-gray-800 mb-2">{product.Titre}</h3>
                     <p className="text-gray-400 mb-4 line-clamp-2">Type : {product.Type}</p>
-                    {product.Type && (
-                      <p className="text-gray-400 mb-4 line-clamp-2">
-                        Ref : {product.Type}
-                      </p>
-                    )}
                     <p className="text-gray-600 mb-4 line-clamp-2">{product.Description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-2xl font-bold text-green-600">{product.Prix} Dh/kg</span>
