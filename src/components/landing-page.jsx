@@ -382,9 +382,9 @@ export default function App() {
                     <p className="text-gray-600 mb-4 line-clamp-2">{product.Description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-2xl font-bold text-green-600">{product.Prix} Dh/kg</span>
-                      <button className="px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors shadow-md">
+                      <a href="#contact" className="px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors shadow-md">
                         Consulter
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
