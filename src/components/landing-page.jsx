@@ -136,11 +136,10 @@ export default function App() {
       <header className="bg-gradient-to-r from-green-800 to-green-600 text-white shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <Recycle className="h-8 w-8 mr-2" />
-              <h1 className="text-3xl font-bold">Déchets.ma</h1>
-            </div>
-
+          <div className="flex items-center">
+            <img src={require('../logo dechets.png')} alt="Déchets.ma logo" className="h-8 w-8 mr-2" />
+            <h1 className="text-3xl font-bold">Déchets.ma</h1>
+          </div>
             {/* Mobile menu button */}
             <button
               className="md:hidden p-2 rounded-md hover:bg-green-700 focus:outline-none"
@@ -929,8 +928,8 @@ export default function App() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Recycle className="h-6 w-6 mr-2 text-green-600" />
-              <h3 className="text-xl font-bold text-gray-800">Déchets.ma</h3>
+              <img src={require('../logo dechets2.png')} alt="Déchets.ma logo" className="h-8 w-8 mr-2" />
+              <h3 className="text-xl font-bold text-green-600">Déchets.ma</h3>
             </div>
 
             <div className="flex space-x-4 mb-4 md:mb-0">
@@ -963,7 +962,7 @@ export default function App() {
         href="https://wa.me/212668311668"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed left-6 mb-40 bottom-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed left-6 bottom-6 mb-8 md:mb-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Contactez-nous sur WhatsApp"
       >
         <MessageCircle className="h-6 w-6" />
