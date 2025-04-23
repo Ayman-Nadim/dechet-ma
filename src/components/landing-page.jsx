@@ -962,7 +962,7 @@ export default function App() {
         href="https://wa.me/212668311668"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed left-6 bottom-6 mb-8 md:mb-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed left-6 bottom-6 mb-2 md:mb-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Contactez-nous sur WhatsApp"
       >
         <MessageCircle className="h-6 w-6" />
