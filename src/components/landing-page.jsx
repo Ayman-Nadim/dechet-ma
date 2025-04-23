@@ -33,7 +33,7 @@ export default function App() {
       try {
         setLoading(true)
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbw2RDp4MP3uZczX3kQCbreb7Txbp8QJvIN9rN0JS2cNQZ-24DiZVgVBLEoP-B-pPs3Q/exec",
+          "https://script.google.com/macros/s/AKfycbz2sokaV3NKzlF1yjkggyZeqFIlNTASQoTd87veQUQxBsFeTX3ZlUN9EWud4he1paBl/exec",
         )
 
         if (!response.ok) {
@@ -41,6 +41,7 @@ export default function App() {
         }
 
         const data = await response.json()
+        console.log(data)
         setProducts(data)
         setLoading(false)
       } catch (err) {
@@ -297,7 +298,7 @@ export default function App() {
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-gray-800">Écologique</h3>
               <p className="text-gray-600">
-                Contribuez à la réduction des déchets et à la préservation de notre environnement pour les générations
+                Contribuez à la réduction des déchets et à préservation de notre environnement pour les générations
                 futures.
               </p>
             </div>
@@ -373,17 +374,28 @@ export default function App() {
                     )}
                     {product.Grammage && (
                       <span className="absolute top-4 right-4 bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
-                        {product.Grammage}
+                        {product.Grammage} KG
                       </span>
+                    )}
+                    {product.Reference && (
+                      <small className="absolute top-4 left-4 bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                        Ref : {product.Reference}
+                      </small>
                     )}
                   </div>
                   <div className="p-6">
                     <h3 className="text-2xl font-semibold text-gray-800 mb-2">{product.Titre}</h3>
+                    <p className="text-gray-400 mb-4 line-clamp-2">Type : {product.Type}</p>
+                    {product.Type && (
+                      <p className="text-gray-400 mb-4 line-clamp-2">
+                        Ref : {product.Type}
+                      </p>
+                    )}
                     <p className="text-gray-600 mb-4 line-clamp-2">{product.Description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-2xl font-bold text-green-600">{product.Prix} Dh/kg</span>
                       <a href="#contact" className="px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors shadow-md">
-                        Consulter
+                        Plus d'infos
                       </a>
                     </div>
                   </div>
