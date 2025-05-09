@@ -33,7 +33,7 @@ export default function App() {
       try {
         setLoading(true)
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbz2sokaV3NKzlF1yjkggyZeqFIlNTASQoTd87veQUQxBsFeTX3ZlUN9EWud4he1paBl/exec",
+          "https://script.google.com/macros/s/AKfycbz_kf8tZ12Q_Ojza0MC3WpzEUpGjKfhHsSErHp2EoeqiL8Uyy6aF6d__TMvPwGWGhGh/exec",
         )
 
         if (!response.ok) {
@@ -795,7 +795,7 @@ export default function App() {
 
                 <div className="mb-6">
                   <h4 className="font-semibold mb-2 text-lg">Email</h4>
-                  <p className="text-green-50">contact@Déchets.ma</p>
+                  <p className="text-green-50">saadani.rafik@gmail.com</p>
                 </div>
 
                 <div>
